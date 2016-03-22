@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>收徒</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/apprentice.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/swiper_3dflow.css"/>
+    <script type="text/javascript" src="js/scripts.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/swiper_3dflow.js"></script>
+    <script type="text/javascript" src="js/foot.js"></script>
+</head>
+<body>
+<div class="page-content page-apprentice">
+    <div class="top">
+        <div class="ava"><img src="img/user.png" alt="头像"/></div>
+        <a href="apprenticeDetails.html" class="item totalNum">总收徒：<span>15211</span>个</a>
+        <a href="apprenticeDetails.html" class="item todayNum">今日收徒：<span>2</span>个</a>
+        <a href="apprenticeDetails.html" class="item totalProfit">收徒总收益：<span>2</span>元</a>
+        <a href="apprenticeDetails.html" class="item todayProfit">今日收徒收益：<span>2</span>元</a>
+        <a href="ranking-list.html" class="item ranking">收徒排行榜</a>
+    </div>
+    <div class="content">
+        <div class="hd-tab">
+            <a href="#" class="tab-link active">晒单收徒</a>
+            <a href="#" class="tab-link">扫码收徒</a>
+            <a href="#" id="thbut" class="tab-link">主题收徒</a>
+            <a href="#" class="tab-link">链接收徒</a>
+        </div>
+        <div class="bd-tab">
+            <div id="tab1" class="tab-content">
+                <!-- 晒单收徒-->
+                <div class="showReport">
+                    <div class="monkey"><img src="img/balloon01.png" alt=""/></div>
+                    <div class="title"><h3>至尊宝成绩单</h3></div>
+                    <div class="data-area">
+                        <div class="line">注册天数：<div class="right"><span class="day">336</span>天</div></div>
+                        <div class="line">试玩应用：<div class="right"><span class="try">30</span>个</div></div>
+                        <div class="line">试玩收入：<div class="right"><span class="income">34.00</span>元</div></div>
+                        <div class="line">徒弟数量：<div class="right"><span class="person">5</span>人</div></div>
+                        <div class="line">学徒奖励：<div class="right"><span class="reward">2.5</span>元</div></div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="data-area">
+                        <div class="title">累计收入</div>
+                        <div class="totalIncome"><span>36.5</span>元</div>
+                    </div>
+                    <div class="share"><a href="#" id="shareBtn">点击分享</a></div>
+
+                </div>
+            </div>
+            <div id="tab2" class="tab-content">
+                <!-- 扫码收徒-->
+                <div class="code">
+                    <div class="codeimg"><img src="img/code.png" alt="二维码"/><div class="reflection"></div></div>
+                    扫一扫，马上加入至尊宝
+                </div>
+            </div>
+            <div id="tab3" class="tab-content">
+                <!-- 主题收徒-->
+                <div class="swiper">
+                    <!-- Swiper 主题收徒 -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/swiper1.png" alt="pic1"/></div>
+                            <div class="swiper-slide"><img src="img/swiper2.png" alt="pic1"/></div>
+                            <div class="swiper-slide"><img src="img/swiper3.png" alt="pic1"/></div>
+                            <div class="swiper-slide"><img src="img/swiper4.png" alt="pic1"/></div>
+                            <div class="swiper-slide"><img src="img/swiper2.png" alt="pic1"/></div>
+                            <!--<div class="swiper-slide" style="background:url('img/swiper2.png') no-repeat center center/cover"></div>-->
+                            <!--<div class="swiper-slide" style="background:url('img/swiper3.png') no-repeat center center/cover"></div>-->
+                            <!--<div class="swiper-slide" style="background:url('img/swiper1.png') no-repeat center center/cover"></div>-->
+                            <!--<div class="swiper-slide" style="background:url('img/swiper2.png') no-repeat center center/cover"></div>-->
+                        <!-- -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab4" class="tab-content">
+                <!--链接收徒 -->
+                <div class="linkArea">
+                    <div class="link" id="link">http://192.168.0.214:63343/test/apprentice.html#drrgdfgg-sadsffjh </div>
+                    <div class="description">
+                        <p>1.长按可以复制收徒链接</p>
+                        <p>2.将该链接粘贴至任何你想发布的地方（例如：QQ群、论坛），用户手机通过该链接注册成为至尊用户，即可成为您的徒弟</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- 底部工具栏 -->
+<nav class="foot-bar bar-tab">
+    <a class="tab-item" href="index.html">赚钱</a>
+    <a class="tab-item active" href="apprentice.html">收徒</a>
+    <a class="tab-item" href="drawing-passageway.html">提现</a>
+    <a class="tab-item" href="personalCenter.html">个人中心</a>
+</nav>
+
+<script>
+    $(function () {
+        var $selTab = $(".hd-tab a.tab-link");
+        $(".bd-tab > #tab1").css("display","block");
+        $selTab.click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            var index=$selTab.index(this);
+            $(".bd-tab >.tab-content").eq(index).show().siblings().hide();
+        });
+
+        $("#thbut").click(function() {
+            setPic();
+        });
+        setSwiper();
+
+    });
+    function setPic() {
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: '2',
+            loop: true,
+            coverflow: {
+                rotate: 30,
+                stretch: 20,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true
+            }
+        });
+    }
+    //  设置图片外框宽高
+    function setSwiper(){
+        var sWidth=document.body.scrollWidth;
+        var picHight=sWidth*0.757;
+        var pic=document.getElementsByClassName("swiper-slide");
+        for(var i=0;i<pic.length;i++){
+            pic[i].style.width=sWidth+"px";
+            pic[i].style.height=picHight+"px";
+        }
+    }
+
+    window.onresize = function() {
+        setPic();
+        setSwiper();
+    };
+
+
+
+</script>
+
+
+</body>
+</html>
