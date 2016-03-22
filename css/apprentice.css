@@ -1,0 +1,400 @@
+/*.page-apprentice{*/
+    /*padding: 0 0 52px;*/
+    /*overflow: auto;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+/*}*/
+.top{
+    position: relative;
+    height: 180px;
+    background: #0067b5;
+    border-bottom: 1px solid #002a4e;
+}
+.top .ava{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border:2px solid #fff;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.top img{
+    width: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.top a.item{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    z-index: 2;
+}
+.top a.totalNum{
+    top: 50%;
+    margin-top: -60px;
+    left: 25%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.top a.todayNum{
+    bottom: 50%;
+    margin-bottom: -65px;
+    left: 25%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+}
+.top a.todayNum span{
+    color: #10d4f7;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.top a.totalProfit{
+    top: 50%;
+    margin-top: -75px;
+    right: 25%;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+}
+.top a.todayProfit{
+    top: 50%;
+    margin-top: 0;
+    right: 30%;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+}
+.top a.ranking{
+    bottom: 4%;
+    /*margin-bottom: 0px;*/
+    right: 20%;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+}
+.content{
+    /*margin-top: 1px;*/
+}
+.content .hd-tab{
+    height: 50px;
+    overflow: hidden;
+    border-top: 1px solid #3378b5;
+}
+.content .hd-tab a{
+    display: block;
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #004174;
+    /*letter-spacing: 1px;*/
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.16);
+}
+.content .hd-tab a.active{
+    background: #fff;
+    color: #000;
+    -webkit-box-sizing: none;
+    -moz-box-sizing: none;
+    box-sizing: none;
+}
+.content .bd-tab{
+    min-height: 200px;
+    height: 200px;
+    height: auto !important;
+}
+.tab-content{
+    display: none;
+    min-height: 200px;
+    height: 200px;
+    height: auto !important;
+    position: relative;
+}
+.showReport{
+    width: 94%;
+    margin: 20px auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #65dae6 url("../img/balloonbg.png") no-repeat center center/cover scroll;
+}
+.showReport .monkey{
+    position: absolute;
+    width: 80px;
+    right: 20%;
+    margin-right: -45px;
+    top: 10px;
+
+}
+.showReport .monkey img{
+    width: 100%;
+}
+.showReport .title,.showReport .share{
+    text-align: center;
+}
+.showReport h3,#shareBtn{
+    font-family: "microsoft yahei";
+    color: #f7b3b4;
+    background: #fdfdfe;
+    border-radius: 25px;
+    padding: 2px 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 10px auto;
+    -webkit-box-shadow: 0px 1px 2px #EADEDE;
+    -moz-box-shadow: 0px 1px 2px #EADEDE;
+    box-shadow: 0px 1px 2px #EADEDE;
+}
+#shareBtn{
+    padding: 2px 30px;
+}
+.showReport .data-area {
+    width: 60%;
+    padding: 10px 15px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    /*font-weight: 700;*/
+    color: #000;
+    font-size: 1.4rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.showReport .data-area .line{
+    line-height: 2.4rem;
+}
+ .showReport .data-area .line .right{
+     float: right;
+     text-align: left;
+     width: 45%;
+ }
+.showReport .hr{
+     height: 1px;
+     width: 65%;
+     background: rgba(255, 255, 255, 0.5);
+     margin: 0 auto;
+ }
+.showReport .data-area .title{
+    /*font-weight: 700;*/
+
+}
+.showReport .data-area .totalIncome{
+    text-align: center;
+    font-size: 2rem;
+    color: #0071c1;
+}
+.showReport .data-area .totalIncome span{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.code{
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+.code .codeimg {
+    position: relative;
+    width: 50%;
+    margin: 20px auto;
+}
+.code .codeimg img{
+    display: block;
+    border: none;
+    width: 100%;
+}
+.codeimg .reflection{
+    width: 90%;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    bottom: -6px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,.2) 40%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,.2) 40%);
+    background: -o-linear-gradient(top, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,.2) 40%);
+    background: linear-gradient(top, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,.2) 40%);
+    -webkit-box-shadow: 0px 0px 9px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 9px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 9px 7px rgba(0, 0, 0, 0.2);
+}
+.swiper{
+    height: 300px;
+}
+.swiper .swiper-container {
+    padding:30px 0;
+    width: 100%;
+}
+.swiper .swiper-slide {
+    border-radius:5px;
+    border-bottom:1px solid #fff;
+}
+.swiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    border-radius:5px;
+    border-bottom:1px solid #fff;
+}
+.swiper .swiper-slide a {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:1
+}
+.linkArea{
+    width: 94%;
+    margin: 20px auto;
+}
+.linkArea .link{
+    background: #2d1c2f;
+    color: #33d780;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding: 15px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    margin: 20px 0;
+    word-wrap:break-word;
+}
+.linkArea .description{
+    padding: 10px;
+}
+.linkArea .description p{
+    margin: 0;
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 2.2rem;
+}
+
+/*ÕΩµ‹œÍ«È*/
+html.apprenticeDetails {
+    background: #eceaf5;
+}
+.page-apprenticeDetails{
+    padding: 55px 0 52px;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.profitDetails{
+    width: 98%;
+    margin: 6px auto;
+}
+.profitDetails .record{
+    margin-bottom: 6px;
+}
+.profitDetails .record .title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    padding-left: 5px;
+    margin-top: 5px;
+    color: #666;
+}
+.profitDetails .record ul{
+    padding: 0;
+    margin: 0;
+}
+.profitDetails .record ul li{
+    list-style: none;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+}
+.profitDetails .record ul li .data{
+    float: left;
+    width: 74px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+.profitDetails .record ul li .data span{
+    font-size: 1.6rem;
+    color: #e68b2b;
+    text-align: center;
+}
+.profitDetails .history ul li .data span{
+    color: #666;
+}
+.profitDetails .record ul li .data i{
+    font-size: 1rem;
+    display: block;
+    font-style: normal;
+    margin-top: -2px;
+}
+.profitDetails .record ul li .person{
+    overflow: hidden;
+}
+.profitDetails .record ul li .person img{
+    width: 40px;
+    height: 40px;
+    border: none;
+    float: left;
+}
+.profitDetails .record ul li .person .nickName{
+    float: left;
+    line-height: 40px;
+    font-size: 1.6rem;
+    /*font-weight: 700;*/
+    color: #666;
+    margin-left: 10px;
+
+}
+.profitDetails .record ul li .person .profit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 40px;
+    color: #e68b2b;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.profitDetails .today{
+
+}
+.profitDetails .history{
+
+}
