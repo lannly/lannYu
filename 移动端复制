@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<script type="text/javascript" src="js/clipboard.min.js"></script>
+		<style>
+      input{width:100px;}
+      #text1{width:60px;}
+      #textBtn1{border:1px solid #00f;text-align:center;}
+		</style>
+</head>
+<body>
+	1,第一种方法，点击按钮选择关键词
+<div>
+<input type="text" id="text1" class="Keyword" readonly="readonly" value="关键字1"/>
+	<input type="text" id="textBtn1" data-clipboard-target="#text1" readonly="readonly" value="选择" oncopy="copyKeyword()"/>
+</div>
+<br/>
+2,第二种方法，点击input文本 选择关键词
+	<input type="text" id="textBtn2" class="Keyword" data-clipboard-target="#textBtn2" readonly="readonly" value="关键字2" oncopy="copyKeyword()"/>
+<script>
+/**
+ * Created by yulan on 2016/4/19.
+ */
+$(function(){
+    var clipboard1 = new Clipboard("#textBtn1");
+    var clipboard2 = new Clipboard('#textBtn2');
+});
+//复制跳转打开appstore
+function copyKeyword(){
+//    window.location.href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/search?mt=8";
+}
+</script>
+</body>
+</html>
