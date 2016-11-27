@@ -111,11 +111,13 @@
 
     </div>
 </div>
-<!--<script src="js/paper/jquery-1.8.3.min.js"></script>-->
+<script src="js/paper/jquery-1.8.3.min.js"></script>
 <!--<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>-->
 <!--<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>-->
-<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<!--<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>-->
 <script src="js/paper/jquery.form.js"></script>
+<script src="js/paper/upload.js"></script>  <!--上传图片-->
+<script src="js/paper/demo.js"></script> <!--上传图片模块的样式-->
 <script>
     $(function () {
         //登录
@@ -157,7 +159,7 @@
 
         $.ajax({
             type: "GET",
-            url: "/question-1.0/store/selectBrand",
+            url: "http://123.57.14.40:80/question-1.0/store/selectBrand",
             data: "",
             success: function (data) {
                 var select = "<option value='0'>请选择</option>";
@@ -166,10 +168,11 @@
                     select = select + "<option value='" + value.id + "'>" + value.brandName + "</option>";
                 });
                 $('#brandName').html(select);
-            },
-            error: function(errorThrown){
-                alert(errorThrown['error']);
             }
+//            ,
+//            error: function(errorThrown){
+//                alert(errorThrown['error']);
+//            }
         });
 
         $('#brandName').change(function () {
@@ -180,7 +183,7 @@
             }
             $.ajax({
                 type: "GET",
-                url: "/question-1.0/store/getStoreByBid",
+                url: "http://123.57.14.40:80/question-1.0/store/getStoreByBid",
                 data: "brandId=" + brandV,
                 success: function (data) {
                     var select = "<option value='0'>请选择</option>";
@@ -194,7 +197,7 @@
 
             $.ajax({
                 type: "GET",
-                url: "/question-1.0/store/getQuestionByBid",
+                url: "http://123.57.14.40:80/question-1.0/store/getQuestionByBid",
                 data: "brandId=" + brandV,
                 success: function (data) {
                     //alert(data.message+data.data.length);
@@ -267,8 +270,7 @@
     }
 
 </script>
-<script src="js/paper/upload.js"></script>  <!--上传图片-->
-<script src="js/paper/demo.js"></script> <!--上传图片模块的样式-->
+
 <script>
     <!-- 图片上传状态提醒,提示框渐变消失-->
     function PopBox(text, time) {
